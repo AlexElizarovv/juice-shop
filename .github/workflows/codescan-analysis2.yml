@@ -3,14 +3,14 @@
 # read our documentation at https://github.com/codescan-io/codescan-scanner-action
 name: CodeScan
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
+on: workflow_dispatch
+ # push:
+  #  branches: [ master ]
+ # pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ master ]
-  schedule:
-    - cron: '41 3 * * 3'
+    #branches: [ master ]
+ # schedule:
+    #- cron: '41 3 * * 3'
 
 jobs:
     CodeScan:
